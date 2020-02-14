@@ -1,0 +1,65 @@
+[gd_scene format=2]
+
+[node name="GUI" type="Node2D"]
+
+[node name="Layout" type="MarginContainer" parent="."]
+anchor_right = 1.0
+margin_left = 20.0
+margin_top = 20.0
+margin_right = 20.0
+margin_bottom = 20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Vertical Split" type="VBoxContainer" parent="Layout"]
+margin_right = 8.0
+margin_bottom = 12.0
+
+[node name="Top" type="HBoxContainer" parent="Layout/Vertical Split"]
+margin_right = 8.0
+margin_bottom = 4.0
+
+[node name="Left" type="VBoxContainer" parent="Layout/Vertical Split/Top"]
+margin_bottom = 4.0
+
+[node name="Action History" type="VBoxContainer" parent="Layout/Vertical Split/Top/Left"]
+
+[node name="Life" type="VBoxContainer" parent="Layout/Vertical Split/Top/Left"]
+margin_top = 4.0
+margin_bottom = 4.0
+
+[node name="Battlemap" type="VBoxContainer" parent="Layout/Vertical Split/Top"]
+margin_left = 4.0
+margin_right = 4.0
+margin_bottom = 4.0
+
+[node name="Right" type="VBoxContainer" parent="Layout/Vertical Split/Top"]
+margin_left = 8.0
+margin_right = 8.0
+margin_bottom = 4.0
+
+[node name="Turn Order" type="VBoxContainer" parent="Layout/Vertical Split/Top/Right"]
+
+[node name="Essence" type="VBoxContainer" parent="Layout/Vertical Split/Top/Right"]
+margin_top = 4.0
+margin_bottom = 4.0
+
+[node name="Bottom" type="HBoxContainer" parent="Layout/Vertical Split"]
+margin_top = 8.0
+margin_right = 8.0
+margin_bottom = 12.0
+
+[node name="Actions" type="HBoxContainer" parent="Layout/Vertical Split/Bottom"]
+margin_bottom = 4.0
+
+[node name="Info" type="VBoxContainer" parent="Layout/Vertical Split/Bottom"]
+margin_left = 4.0
+margin_right = 4.0
+margin_bottom = 4.0
+
+[node name="Tooltips" type="VBoxContainer" parent="Layout/Vertical Split/Bottom/Info"]
+
+[node name="Utilities" type="HBoxContainer" parent="Layout/Vertical Split/Bottom/Info"]
+margin_top = 4.0
+margin_bottom = 4.0

@@ -1,0 +1,20 @@
+[gd_scene format=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+polygon = PoolVector2Array( 0, 2, 0, 605, 1020, 605, 1020, 2 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Polygon2D"]
+margin_right = 40.0
+margin_bottom = 40.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Test"
+__meta__ = {
+"_edit_use_anchors_": false
+}
