@@ -1,0 +1,206 @@
+[gd_scene format=2]
+
+[node name="GUI" type="Node2D"]
+
+[node name="Layout" type="MarginContainer" parent="."]
+anchor_right = 1.0
+margin_right = 1920.0
+margin_bottom = 1080.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="Layout"]
+margin_right = 1920.0
+margin_bottom = 1080.0
+
+[node name="Vertical Split" type="VBoxContainer" parent="Layout"]
+margin_right = 1920.0
+margin_bottom = 1080.0
+
+[node name="Top" type="HBoxContainer" parent="Layout/Vertical Split"]
+margin_right = 1920.0
+margin_bottom = 1027.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Left" type="VBoxContainer" parent="Layout/Vertical Split/Top"]
+margin_right = 637.0
+margin_bottom = 1027.0
+size_flags_horizontal = 3
+
+[node name="Action History" type="VBoxContainer" parent="Layout/Vertical Split/Top/Left"]
+margin_right = 637.0
+margin_bottom = 50.0
+
+[node name="Action 1" type="Label" parent="Layout/Vertical Split/Top/Left/Action History"]
+margin_right = 637.0
+margin_bottom = 14.0
+text = "Action 1"
+
+[node name="Action 2" type="Label" parent="Layout/Vertical Split/Top/Left/Action History"]
+margin_top = 18.0
+margin_right = 637.0
+margin_bottom = 32.0
+text = "Action 2"
+
+[node name="Action 3" type="Label" parent="Layout/Vertical Split/Top/Left/Action History"]
+margin_top = 36.0
+margin_right = 637.0
+margin_bottom = 50.0
+text = "Action 3"
+
+[node name="MarginContainer" type="MarginContainer" parent="Layout/Vertical Split/Top/Left"]
+margin_top = 54.0
+margin_right = 637.0
+margin_bottom = 68.0
+
+[node name="Life" type="Label" parent="Layout/Vertical Split/Top/Left/MarginContainer"]
+margin_right = 637.0
+margin_bottom = 14.0
+text = "Life"
+
+[node name="Battlemap" type="MarginContainer" parent="Layout/Vertical Split/Top"]
+margin_left = 641.0
+margin_right = 1278.0
+margin_bottom = 1027.0
+size_flags_horizontal = 3
+
+[node name="Map" type="Label" parent="Layout/Vertical Split/Top/Battlemap"]
+margin_top = 506.0
+margin_right = 637.0
+margin_bottom = 520.0
+text = "Map"
+align = 1
+
+[node name="Right" type="VBoxContainer" parent="Layout/Vertical Split/Top"]
+margin_left = 1282.0
+margin_right = 1920.0
+margin_bottom = 1027.0
+size_flags_horizontal = 3
+
+[node name="Turn Order" type="VBoxContainer" parent="Layout/Vertical Split/Top/Right"]
+margin_right = 638.0
+margin_bottom = 50.0
+
+[node name="Turn 1" type="Label" parent="Layout/Vertical Split/Top/Right/Turn Order"]
+margin_right = 638.0
+margin_bottom = 14.0
+text = "Turn 1"
+align = 2
+
+[node name="Turn 2" type="Label" parent="Layout/Vertical Split/Top/Right/Turn Order"]
+margin_top = 18.0
+margin_right = 638.0
+margin_bottom = 32.0
+text = "Turn 2"
+align = 2
+
+[node name="Turn 3" type="Label" parent="Layout/Vertical Split/Top/Right/Turn Order"]
+margin_top = 36.0
+margin_right = 638.0
+margin_bottom = 50.0
+text = "Turn 3"
+align = 2
+
+[node name="MarginContainer2" type="MarginContainer" parent="Layout/Vertical Split/Top/Right"]
+margin_top = 54.0
+margin_right = 638.0
+margin_bottom = 68.0
+
+[node name="Essence" type="Label" parent="Layout/Vertical Split/Top/Right/MarginContainer2"]
+margin_right = 638.0
+margin_bottom = 14.0
+text = "Essence"
+align = 2
+
+[node name="Bottom" type="HBoxContainer" parent="Layout/Vertical Split"]
+margin_top = 1031.0
+margin_right = 1920.0
+margin_bottom = 1080.0
+size_flags_horizontal = 3
+
+[node name="Actions" type="HBoxContainer" parent="Layout/Vertical Split/Bottom"]
+margin_right = 958.0
+margin_bottom = 49.0
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="Movement" type="Label" parent="Layout/Vertical Split/Bottom/Actions"]
+margin_left = 358.0
+margin_top = 17.0
+margin_right = 427.0
+margin_bottom = 31.0
+text = "Movement"
+
+[node name="Major" type="Label" parent="Layout/Vertical Split/Bottom/Actions"]
+margin_left = 431.0
+margin_top = 17.0
+margin_right = 467.0
+margin_bottom = 31.0
+text = "Major"
+
+[node name="Minor" type="Label" parent="Layout/Vertical Split/Bottom/Actions"]
+margin_left = 471.0
+margin_top = 17.0
+margin_right = 508.0
+margin_bottom = 31.0
+text = "Minor"
+
+[node name="Reaction" type="Label" parent="Layout/Vertical Split/Bottom/Actions"]
+margin_left = 512.0
+margin_top = 17.0
+margin_right = 567.0
+margin_bottom = 31.0
+text = "Reaction"
+
+[node name="End Turn" type="Label" parent="Layout/Vertical Split/Bottom/Actions"]
+margin_left = 571.0
+margin_top = 9.0
+margin_right = 599.0
+margin_bottom = 40.0
+text = "End
+Turn"
+
+[node name="Info" type="VBoxContainer" parent="Layout/Vertical Split/Bottom"]
+margin_left = 962.0
+margin_right = 1920.0
+margin_bottom = 49.0
+size_flags_horizontal = 3
+
+[node name="Tooltips" type="MarginContainer" parent="Layout/Vertical Split/Bottom/Info"]
+margin_right = 958.0
+margin_bottom = 31.0
+
+[node name="Tooltip Text" type="Label" parent="Layout/Vertical Split/Bottom/Info/Tooltips"]
+margin_right = 958.0
+margin_bottom = 31.0
+text = "Tooltip
+Text"
+align = 1
+
+[node name="Utilities" type="HBoxContainer" parent="Layout/Vertical Split/Bottom/Info"]
+margin_top = 35.0
+margin_right = 958.0
+margin_bottom = 49.0
+alignment = 1
+
+[node name="Character Sheet" type="Label" parent="Layout/Vertical Split/Bottom/Info/Utilities"]
+margin_left = 353.0
+margin_right = 453.0
+margin_bottom = 14.0
+text = "Character Sheet"
+
+[node name="Adventure Log" type="Label" parent="Layout/Vertical Split/Bottom/Info/Utilities"]
+margin_left = 457.0
+margin_right = 549.0
+margin_bottom = 14.0
+text = "Adventure Log"
+
+[node name="Settings" type="Label" parent="Layout/Vertical Split/Bottom/Info/Utilities"]
+margin_left = 553.0
+margin_right = 604.0
+margin_bottom = 14.0
+text = "Settings"
