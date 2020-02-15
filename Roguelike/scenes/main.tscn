@@ -22,13 +22,13 @@ margin_bottom = 1080.0
 
 [node name="Top" type="HBoxContainer" parent="Layout/Vertical Split"]
 margin_right = 1920.0
-margin_bottom = 1027.0
+margin_bottom = 676.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Left" type="VBoxContainer" parent="Layout/Vertical Split/Top"]
 margin_right = 637.0
-margin_bottom = 1027.0
+margin_bottom = 676.0
 size_flags_horizontal = 3
 
 [node name="Action History" type="VBoxContainer" parent="Layout/Vertical Split/Top/Left"]
@@ -65,20 +65,20 @@ text = "Life"
 [node name="Battlemap" type="MarginContainer" parent="Layout/Vertical Split/Top"]
 margin_left = 641.0
 margin_right = 1278.0
-margin_bottom = 1027.0
+margin_bottom = 676.0
 size_flags_horizontal = 3
 
 [node name="Map" type="Label" parent="Layout/Vertical Split/Top/Battlemap"]
-margin_top = 506.0
+margin_top = 331.0
 margin_right = 637.0
-margin_bottom = 520.0
+margin_bottom = 345.0
 text = "Map"
 align = 1
 
 [node name="Right" type="VBoxContainer" parent="Layout/Vertical Split/Top"]
 margin_left = 1282.0
 margin_right = 1920.0
-margin_bottom = 1027.0
+margin_bottom = 676.0
 size_flags_horizontal = 3
 
 [node name="Turn Order" type="VBoxContainer" parent="Layout/Vertical Split/Top/Right"]
@@ -117,57 +117,58 @@ text = "Essence"
 align = 2
 
 [node name="Bottom" type="HBoxContainer" parent="Layout/Vertical Split"]
-margin_top = 1031.0
+margin_top = 680.0
 margin_right = 1920.0
 margin_bottom = 1080.0
+rect_min_size = Vector2( 0, 400 )
 size_flags_horizontal = 3
 
 [node name="Actions" type="HBoxContainer" parent="Layout/Vertical Split/Bottom"]
 margin_right = 958.0
-margin_bottom = 49.0
+margin_bottom = 400.0
 size_flags_horizontal = 3
 alignment = 1
 
 [node name="Movement" type="Label" parent="Layout/Vertical Split/Bottom/Actions"]
 margin_left = 358.0
-margin_top = 17.0
+margin_top = 193.0
 margin_right = 427.0
-margin_bottom = 31.0
+margin_bottom = 207.0
 text = "Movement"
 
 [node name="Major" type="Label" parent="Layout/Vertical Split/Bottom/Actions"]
 margin_left = 431.0
-margin_top = 17.0
+margin_top = 193.0
 margin_right = 467.0
-margin_bottom = 31.0
+margin_bottom = 207.0
 text = "Major"
 
 [node name="Minor" type="Label" parent="Layout/Vertical Split/Bottom/Actions"]
 margin_left = 471.0
-margin_top = 17.0
+margin_top = 193.0
 margin_right = 508.0
-margin_bottom = 31.0
+margin_bottom = 207.0
 text = "Minor"
 
 [node name="Reaction" type="Label" parent="Layout/Vertical Split/Bottom/Actions"]
 margin_left = 512.0
-margin_top = 17.0
+margin_top = 193.0
 margin_right = 567.0
-margin_bottom = 31.0
+margin_bottom = 207.0
 text = "Reaction"
 
 [node name="End Turn" type="Label" parent="Layout/Vertical Split/Bottom/Actions"]
 margin_left = 571.0
-margin_top = 9.0
+margin_top = 184.0
 margin_right = 599.0
-margin_bottom = 40.0
+margin_bottom = 215.0
 text = "End
 Turn"
 
 [node name="Info" type="VBoxContainer" parent="Layout/Vertical Split/Bottom"]
 margin_left = 962.0
 margin_right = 1920.0
-margin_bottom = 49.0
+margin_bottom = 400.0
 size_flags_horizontal = 3
 
 [node name="Tooltips" type="MarginContainer" parent="Layout/Vertical Split/Bottom/Info"]
